@@ -74,6 +74,7 @@ with fundamental_data:
     st.subheader('Cash Flow Statement')
     st.write(format_financial_statement(cash_flow))
 
+
 with news:
     for i in range(len(company_news)):
         st.subheader(f'News {i+1}')
