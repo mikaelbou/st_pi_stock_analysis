@@ -32,13 +32,13 @@ start_date = st.sidebar.date_input('Start Date')
 end_date = st.sidebar.date_input('End Date')
 
 
-if not ticker:
-    st.write('Hello world') 
-else:
-    # Fetch and plot stock price data
-    data = yf.download(ticker, start=start_date, end=end_date)
-    fig = px.line(data, x=data.index, y='Adj Close', title=company_name)
-    st.plotly_chart(fig)
+# if not ticker:
+#     st.write('Hello world') 
+# else:
+#     # Fetch and plot stock price data
+#     data = yf.download(ticker, start=start_date, end=end_date)
+#     fig = px.line(data, x=data.index, y='Adj Close', title=company_name)
+#     st.plotly_chart(fig)
 
 # Tabs setup
 pricing_data, fundamental_data, news, about = st.tabs(['Pricing Data', 'Fundamental Data', 'News', 'About'])
