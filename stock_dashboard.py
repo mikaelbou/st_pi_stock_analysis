@@ -63,7 +63,9 @@ def welcome_page():
     st.write(f'Developed by Mikael Boudzko')
     st.write(f'Linkedin: www.linkedin.com/in/mikaelboudzko')
     st.subheader(f'Directions')
-    st.write(f'Please input ticker and set date range in side menu, when entering ticker press return/enter to save ticker.')
+    st.write(f'Please input the ticker and set the date range in the side menu; when entering the ticker, press return/enter to save the ticker.')
+    st.write(f'Please note this app is a work in progress; errors may occur.')
+    st.write(f'Currently working on fixing JSON error in streamlit environment.')
 
 def format_financial_statement(statement):
     # Transpose the statement
